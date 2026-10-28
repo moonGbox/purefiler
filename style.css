@@ -17,3 +17,7 @@
 .screenshot-track .screenshot-card span{font-size:12px}
 .scroll-hint{font-size:12px;color:#9e98aa;margin:0;padding:0 30px 21px}
 @media(max-width:750px){.showcase-top{padding:20px 18px}.carousel-controls{margin-left:0}.screenshot-track{padding-left:18px;padding-right:18px;gap:12px;scroll-padding-inline:18px}.screenshot-track .screenshot-card{flex-basis:min(330px,82vw)}.scroll-hint{padding-left:18px}}
+
+/* iPhone/iPad Safari: always lay cards out horizontally */
+#purefiler-screenshots{display:grid!important;grid-auto-flow:column!important;grid-template-columns:none!important;grid-auto-columns:380px!important;overflow-x:auto!important;overflow-y:hidden!important;}
+@media(max-width:650px){#purefiler-screenshots{grid-auto-columns:78vw!important;}#purefiler-screenshots>.screenshot-card{width:78vw!important;}}
